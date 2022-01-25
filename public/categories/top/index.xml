@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="utf-8" standalone="yes"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>TOP on Example Site</title>
+    <link>https://example.com/categories/top/</link>
+    <description>Recent content in TOP on Example Site</description>
+    <generator>Hugo -- gohugo.io</generator>
+    <language>zh-hans</language>
+    <lastBuildDate>Tue, 25 Jan 2022 21:24:00 +0800</lastBuildDate><atom:link href="https://example.com/categories/top/index.xml" rel="self" type="application/rss+xml" />
+    <item>
+      <title>更新进展</title>
+      <link>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</link>
+      <pubDate>Tue, 25 Jan 2022 21:24:00 +0800</pubDate>
+      
+      <guid>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</guid>
+      <description>思路  admin展示数据时对数据进行替换达到显示出图片 文章目录的显示更新blog  </description>
+    </item>
+    
+  </channel>
+</rss>
