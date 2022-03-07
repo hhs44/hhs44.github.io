@@ -6,27 +6,13 @@
         <description>Recent content on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-hans</language>
-        <lastBuildDate>Tue, 25 Jan 2022 21:24:00 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
-        <title>更新进展</title>
-        <link>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</link>
-        <pubDate>Tue, 25 Jan 2022 21:24:00 +0800</pubDate>
-        
-        <guid>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</guid>
-        <description>&lt;h1 id=&#34;思路&#34;&gt;思路&lt;/h1&gt;
-&lt;ul&gt;
-&lt;li&gt;admin展示数据时对数据进行替换达到显示出图片&lt;/li&gt;
-&lt;li&gt;文章目录的显示
-更新blog&lt;/li&gt;
-&lt;/ul&gt;
-</description>
-        </item>
-        <item>
+        <lastBuildDate>Mon, 07 Mar 2022 23:45:00 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
         <title>hugo&#43;django&#43;githubPage 个人博客搭建（一）</title>
         <link>https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/</link>
-        <pubDate>Thu, 20 Jan 2022 22:13:00 +0800</pubDate>
+        <pubDate>Mon, 07 Mar 2022 23:45:00 +0800</pubDate>
         
         <guid>https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/</guid>
-        <description>&lt;h2 id=&#34;hugo的搭建&#34;&gt;hugo的搭建&lt;/h2&gt;
+        <description>&lt;img src="https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/uTools_1642688324700.png" alt="Featured image of post hugo&#43;django&#43;githubPage 个人博客搭建（一）" /&gt;&lt;h2 id=&#34;hugo的搭建&#34;&gt;hugo的搭建&lt;/h2&gt;
 &lt;h3 id=&#34;第一步安装scoop&#34;&gt;第一步：安装scoop&lt;/h3&gt;
 &lt;p&gt;安装前需要准备的利器：scoop（一个安装包管理工具）&lt;/p&gt;
 &lt;p&gt;通过scoop直接安装hugo 到win/mac/linux ，因此本次的实现是能够在各个平台上完美兼容的。
@@ -52,9 +38,67 @@ scoop install hugo
 	&lt;/a&gt;
 	
 &lt;/figure&gt;&lt;/p&gt;
-&lt;h3 id=&#34;第三步&#34;&gt;第三步：&lt;/h3&gt;
+&lt;h3 id=&#34;第三步新建hugo本地文件&#34;&gt;第三步：新建hugo本地文件&lt;/h3&gt;
+&lt;p&gt;因为本次是和django项目结合在一起，可以计划一个文件夹，里面保证django和hugo在同一级目录下&lt;/p&gt;
 &lt;h2 id=&#34;dajngo搭建&#34;&gt;dajngo搭建&lt;/h2&gt;
+&lt;p&gt;使用pycharm专业版搭建，并新建一个hugo app。
+使用到的命令为：
+&lt;code&gt;python manage.py create hugo&lt;/code&gt;
+&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 64; 
+			flex-basis: 155px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/uTools_1643690310255_20220201123911949813.png&#34; data-size=&#34;372x575&#34;&gt;
+		&lt;img src=&#34;https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/uTools_1643690310255_20220201123911949813.png&#34;
+			width=&#34;372&#34;
+			height=&#34;575&#34;
+			srcset=&#34;https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/uTools_1643690310255_20220201123911949813_hu199ea9dae24c504cee2590eeb6a593ba_22800_480x0_resize_box_3.png 480w, https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/uTools_1643690310255_20220201123911949813_hu199ea9dae24c504cee2590eeb6a593ba_22800_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
+&lt;p&gt;此外，hugo文章的编辑规则为markdown,在此我选择使用的是django-mdeditor
+可以为数据库字段提供md的编辑框。&lt;/p&gt;
+&lt;p&gt;如下：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 306; 
+			flex-basis: 734px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/1646665599335_20220307230731027002.png&#34; data-size=&#34;1448x473&#34;&gt;
+		&lt;img src=&#34;https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/1646665599335_20220307230731027002.png&#34;
+			width=&#34;1448&#34;
+			height=&#34;473&#34;
+			srcset=&#34;https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/1646665599335_20220307230731027002_hub38e9523c907bc156fc5ef6d2d13ea7d_61760_480x0_resize_box_3.png 480w, https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/1646665599335_20220307230731027002_hub38e9523c907bc156fc5ef6d2d13ea7d_61760_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;&lt;/p&gt;
 &lt;h2 id=&#34;githubpage准备&#34;&gt;githubPage准备&lt;/h2&gt;
+&lt;p&gt;直接参考官方指导即可：
+&lt;a class=&#34;link&#34; href=&#34;https://pages.github.com/&#34;  target=&#34;_blank&#34; rel=&#34;noopener&#34;
+    &gt;https://pages.github.com/&lt;/a&gt;&lt;/p&gt;
+</description>
+        </item>
+        <item>
+        <title>更新进展</title>
+        <link>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</link>
+        <pubDate>Tue, 25 Jan 2022 21:24:00 +0800</pubDate>
+        
+        <guid>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</guid>
+        <description>&lt;h1 id=&#34;思路&#34;&gt;思路&lt;/h1&gt;
+&lt;ul&gt;
+&lt;li&gt;admin展示数据时对数据进行替换达到显示出图片&lt;/li&gt;
+&lt;li&gt;文章目录的显示
+更新blog&lt;/li&gt;
+&lt;/ul&gt;
 </description>
         </item>
         <item>
