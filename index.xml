@@ -94,11 +94,19 @@ scoop install hugo
         
         <guid>https://example.com/p/%E6%9B%B4%E6%96%B0%E8%BF%9B%E5%B1%95/</guid>
         <description>&lt;h1 id=&#34;思路&#34;&gt;思路&lt;/h1&gt;
+&lt;h2 id=&#34;计划&#34;&gt;计划&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;admin展示数据时对数据进行替换达到显示出图片&lt;/li&gt;
-&lt;li&gt;文章目录的显示
-更新blog&lt;/li&gt;
+&lt;li&gt;分类功能优化&lt;/li&gt;
+&lt;li&gt;访问人数功能&lt;/li&gt;
+&lt;li&gt;热点博客写一篇&lt;/li&gt;
+&lt;li&gt;赚钱资料上传&lt;/li&gt;
 &lt;/ul&gt;
+&lt;h2 id=&#34;已完成&#34;&gt;已完成&lt;/h2&gt;
+&lt;ul&gt;
+&lt;li&gt;admin展示数据时对数据进行替换达到显示出图片 done&lt;/li&gt;
+&lt;li&gt;文章目录的显示 done&lt;/li&gt;
+&lt;/ul&gt;
+&lt;p&gt;更新blog&lt;/p&gt;
 </description>
         </item>
         <item>
