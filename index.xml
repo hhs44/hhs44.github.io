@@ -6,7 +6,42 @@
         <description>Recent content on Example Site</description>
         <generator>Hugo -- gohugo.io</generator>
         <language>zh-hans</language>
-        <lastBuildDate>Mon, 07 Mar 2022 23:45:00 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <lastBuildDate>Tue, 08 Mar 2022 23:06:00 +0800</lastBuildDate><atom:link href="https://example.com/index.xml" rel="self" type="application/rss+xml" /><item>
+        <title>FutureWarning Possible nested set at position 2</title>
+        <link>https://example.com/p/futurewarning-possible-nested-set-at-position-2/</link>
+        <pubDate>Tue, 08 Mar 2022 23:06:00 +0800</pubDate>
+        
+        <guid>https://example.com/p/futurewarning-possible-nested-set-at-position-2/</guid>
+        <description>&lt;p&gt;[toc]&lt;/p&gt;
+&lt;h1 id=&#34;futurewarning-possible-nested-set-at-position-2&#34;&gt;FutureWarning: Possible nested set at position 2&lt;/h1&gt;
+&lt;p&gt;对md文件进行保存时使用正则表达式对内容里的图片名称地址进行提取，以便拷贝图片至hugo目录下&lt;/p&gt;
+&lt;p&gt;原始正则表达式：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;image_re = r&#39;![[].*?[]][(](.*?)[)]&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;报错：&lt;/p&gt;
+&lt;p&gt;&lt;figure 
+	
+		class=&#34;gallery-image&#34; 
+		style=&#34;
+			flex-grow: 638; 
+			flex-basis: 1533px&#34;
+	&gt;
+	&lt;a href=&#34;https://example.com/p/futurewarning-possible-nested-set-at-position-2/uTools_1646752126063_20220308230920152285.png&#34; data-size=&#34;824x129&#34;&gt;
+		&lt;img src=&#34;https://example.com/p/futurewarning-possible-nested-set-at-position-2/uTools_1646752126063_20220308230920152285.png&#34;
+			width=&#34;824&#34;
+			height=&#34;129&#34;
+			srcset=&#34;https://example.com/p/futurewarning-possible-nested-set-at-position-2/uTools_1646752126063_20220308230920152285_hu2d937fbb55cb86158ffbbfff5b9c84ee_17131_480x0_resize_box_3.png 480w, https://example.com/p/futurewarning-possible-nested-set-at-position-2/uTools_1646752126063_20220308230920152285_hu2d937fbb55cb86158ffbbfff5b9c84ee_17131_1024x0_resize_box_3.png 1024w&#34;
+			loading=&#34;lazy&#34;
+			&gt;
+	&lt;/a&gt;
+	
+&lt;/figure&gt;
+优化后：&lt;/p&gt;
+&lt;p&gt;&lt;code&gt;image_re = r&#39;![\[].*?[]][(](.*?)[)]&#39;&lt;/code&gt;&lt;/p&gt;
+&lt;p&gt;其他情况下的处理：&lt;/p&gt;
+&lt;p&gt;修改正则表达式中的匹配 [ [ ] 为 [ [ ] 以此解决问题&lt;/p&gt;
+</description>
+        </item>
+        <item>
         <title>hugo&#43;django&#43;githubPage 个人博客搭建（一）</title>
         <link>https://example.com/p/hugo-django-githubpage-%E4%B8%AA%E4%BA%BA%E5%8D%9A%E5%AE%A2%E6%90%AD%E5%BB%BA%E4%B8%80/</link>
         <pubDate>Mon, 07 Mar 2022 23:45:00 +0800</pubDate>
@@ -96,34 +131,17 @@ scoop install hugo
         <description>&lt;h1 id=&#34;思路&#34;&gt;思路&lt;/h1&gt;
 &lt;h2 id=&#34;计划&#34;&gt;计划&lt;/h2&gt;
 &lt;ul&gt;
-&lt;li&gt;分类功能优化&lt;/li&gt;
-&lt;li&gt;访问人数功能&lt;/li&gt;
-&lt;li&gt;热点博客写一篇&lt;/li&gt;
-&lt;li&gt;赚钱资料上传&lt;/li&gt;
+&lt;li&gt;为django搭建前台页面，展示博客接口&lt;/li&gt;
+&lt;li&gt;优化django后台管理&lt;/li&gt;
 &lt;/ul&gt;
 &lt;h2 id=&#34;已完成&#34;&gt;已完成&lt;/h2&gt;
 &lt;ul&gt;
+&lt;li&gt;分类功能优化 done&lt;/li&gt;
 &lt;li&gt;admin展示数据时对数据进行替换达到显示出图片 done&lt;/li&gt;
 &lt;li&gt;文章目录的显示 done&lt;/li&gt;
 &lt;/ul&gt;
 &lt;p&gt;更新blog&lt;/p&gt;
 </description>
-        </item>
-        <item>
-        <title>测试pythons—shell</title>
-        <link>https://example.com/p/%E6%B5%8B%E8%AF%95pythonsshell/</link>
-        <pubDate>Wed, 19 Jan 2022 01:35:47 +0800</pubDate>
-        
-        <guid>https://example.com/p/%E6%B5%8B%E8%AF%95pythonsshell/</guid>
-        <description></description>
-        </item>
-        <item>
-        <title>第一篇</title>
-        <link>https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AF%87/</link>
-        <pubDate>Wed, 19 Jan 2022 01:21:03 +0800</pubDate>
-        
-        <guid>https://example.com/p/%E7%AC%AC%E4%B8%80%E7%AF%87/</guid>
-        <description></description>
         </item>
         <item>
         <title>Chinese Test</title>
